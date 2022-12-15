@@ -162,6 +162,7 @@ into_buildnumber!(i8);
 into_buildnumber!(i16);
 into_buildnumber!(i32);
 into_buildnumber!(i64);
+into_buildnumber!(usize);
 
 /// Trait implemented by specializations of `Build` and providing common methods
 pub trait Build {
