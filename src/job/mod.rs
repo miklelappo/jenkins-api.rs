@@ -39,7 +39,7 @@ impl Jenkins {
     {
         Ok(self
             .get(&Path::Job {
-                name: Name::Name(job_name.into().0),
+                name: Name::UrlEncodedName(job_name.into().0),
                 configuration: None,
             })?
             .json()?)
